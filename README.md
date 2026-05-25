@@ -62,3 +62,19 @@ Purpose: Builds complex heatmaps evaluating households' micro-climatic Z-score a
 
 - `calc_plot_TIEVI_senSlope.R`
 Purpose: Iterates over multi-decade pixel grids to run pixel-wise non-parametric time series tests. Masks out change trends where significance levels fall outside $p \le 0.1$, returning geographical maps of landscape change.
+
+## Data Source & Citation
+
+### Associated Zenodo Dataset
+
+**Dataset Title:** Data for: Heterogeneous Perceptions of Rainfall Patterns Among Agropastoral Land Users in Sub-Saharan Africa
+
+DOI: [Insert Zenodo DOI here upon completion of deposit]
+
+Note: Please ensure the unpacked asset structures map precisely onto the directory layouts documented above to avoid working-directory pathway breaks.
+
+## Manuscript Citation
+
+If you use these scripts or data pipelines in your academic work, please cite the original publication:
+
+Kotikot, S. M., Smithwick, E. A. H., Nankaya, R., Gergel, S., Zimmerer, K. S., & Abila, R. (2025). Heterogeneous Perceptions of Rainfall Patterns Among Agropastoral Land Users in Sub-Saharan Africa. Annals of the American Association of Geographers, 115(6), 1286–1308. DOI: 10.1080/24694452.2025.2482899
