@@ -47,3 +47,26 @@ To run the analysis scripts successfully, organize your local project root folde
     ├── Analysis_Outputs/                         # Statistical summary layers and pixel trend matrices
     └── Figures/                                  # High-resolution, publication-ready visualization exports
 ```
+
+## Script Breakdown & Execution Pipeline
+
+- `Plot_PerceptionsProps.R`
+Purpose: Generates charts mapping local community responses concerning rainfall amount, shifting variance structures, and agricultural yield impacts using ggpattern.
+Expected Input: Data/Processed/SurveyData/Perceptions_props.csv
+Output: Data/Figures/Fig_PerceptionsProps.tiff
+
+- `cal_plot_NMDS.R`
+Purpose: Compels community data into multidimensional distance matrices using Bray-Curtis indices via vegan::metaMDS. Rotates configuration coordinates against household income targets to plot a unified 4-panel diagnostic grid.
+Expected Input: Data/Processed/SurveyData/ordData_allRain.csv
+Output: Multivariate diagnostic ordination plots.
+
+- `plot_seasonRainAnnom.R`
+Purpose: Extracts pixel-level rainfall histories corresponding to georeferenced survey coordinates using bilinear interpolation. Employs 5-year rolling windows to plot regional onset/cessation shifts.
+Expected Input: Data/Raw/, Data/Processed/raingAvgs/, and Data/Processed/rainTiming/
+Output: Integrated 3x3 temporal anomalies composite grid.
+
+- `Plot_Perceptions_Vs_TemporalObservations.R`
+Purpose: Builds complex heatmaps evaluating households' micro-climatic Z-score anomalies side-by-side with subjective personal reporting arrays.Expected Input: Data/Raw/Survey_data.csv, Data/Processed/raingAvgs/*.tifOutput: Data/Figures/Fig_rainZscores_heatMap.png
+
+- `calc_plot_TIEVI_senSlope.R`
+Purpose: Iterates over multi-decade pixel grids to run pixel-wise non-parametric time series tests. Masks out change trends where significance levels fall outside $p \le 0.1$, returning geographical maps of landscape change.Expected Input: Data/Processed/Phenometrics/Output: Data/Figures/Fig_TI_EVI_SensSlope_Trends.tiff
