@@ -23,7 +23,6 @@ To run the analysis scripts successfully, organize your local project root folde
 │   ├── Raw/
 │   │   ├── narok_county.shp                      # Administrative boundary shapefile (spatial mask)
 │   │   ├── Survey_data.csv                       # Master household registry mapping coordinates (x, y)
-│   │   └── Narok_FieldWork_data_cleaned_18May2022_.csv # Formatted baseline socio-ecological survey table
 │   │
     ├── Analysis_Outputs/                         # Statistical summary layers and pixel trend matrices
 │   └── Processed/
