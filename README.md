@@ -11,7 +11,7 @@ The code provided here integrates household survey microdata with multi-temporal
 To run the analysis scripts successfully, organize your local project root folder (`/`) using the structure below. Ground-truth tabular data, spatial boundary shapefiles, and gridded rasters should be retrieved from the accompanying **Zenodo Dataset** and unzipped into the `/Data` directory before execution.
 
 ```tree
-Data
+
 ├── Scripts/
 │   ├── cal_plot_NMDS.R                           # Socio-ecological perception Ordination (NMDS) plotting pipeline
 │   ├── calc_plot_TIEVI_senSlope.R                # Phenometrics trend calculation (Mann-Kendall & Sen's Slope)
