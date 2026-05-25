@@ -23,17 +23,17 @@ library(patchwork)  # Professional plot layout compositor framework
 # =============================================================================
 # 1. Environment Configurations & Directory Paths
 # =============================================================================
-SHPS_DIR    <- "../Data/Raw/"
+DATA_DIR    <- "../Data/Raw"
 PROCESSED   <- "../Data/Processed"
 OUTPUT_FIGS <- "../Data/Figures"
 
 # Ingest administrative boundaries natively via sf engine
-narok_county <- sf::st_read(file.path(SHPS_DIR, "narok_county.shp"), quiet = TRUE)
+narok_county <- sf::st_read(file.path(DATA_DIR, "narok_county.shp"), quiet = TRUE)
 
 # =============================================================================
 # 2. Survey Ingestion and Vector Cleaning
 # =============================================================================
-survey_raw <- read.csv("Narok_FieldWork_data_cleaned_18May2022_.csv", check.names = FALSE, stringsAsFactors = FALSE)
+survey_raw <- read.csv(file.path(DATA_DIR, "Survey_data.csv"), check.names = FALSE, stringsAsFactors = FALSE)
 households_combined <- survey_raw %>% 
   dplyr::select("Respondent.ID", "x", "y" ) %>% 
   dplyr::mutate(rn = row_number()) # Secure matching identifier indices
