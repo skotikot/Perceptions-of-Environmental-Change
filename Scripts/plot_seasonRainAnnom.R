@@ -35,7 +35,7 @@ narok_county <- sf::st_read(file.path(DATA_DIR, "narok_county.shp"), quiet = TRU
 # =============================================================================
 survey_raw <- read.csv(file.path(DATA_DIR, "Survey_data.csv"), check.names = FALSE, stringsAsFactors = FALSE)
 households_combined <- survey_raw %>% 
-  dplyr::select("Respondent.ID", "x", "y" ) %>% 
+  dplyr::select("x", "y" ) %>% 
   dplyr::mutate(rn = row_number()) # Secure matching identifier indices
 households_sf <- sf::st_as_sf(households_combined, coords = c("x", "y"), crs = 4326)
 
