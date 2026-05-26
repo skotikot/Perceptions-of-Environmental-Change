@@ -8,7 +8,7 @@ The code provided here integrates household survey microdata with multi-temporal
 
 ## Directory Structure
 
-To run the analysis scripts successfully, organize your local project root folder (`/`) using the structure below. Ground-truth tabular data, spatial boundary shapefiles, and gridded rasters should be retrieved from the accompanying **Zenodo Dataset** and unzipped into the `/Data` directory before execution.
+To run the analysis scripts successfully, organize your local project root folder (`/`) using the structure below. Ground-truth tabular data, spatial boundary shapefiles, and gridded rasters should be retrieved from the accompanying **Zenodo Dataset** at [DOI: 10.5281/zenodo.20387060](https://doi.org/10.5281/zenodo.20387060), and unzipped into the `/Data` directory before execution.
 
 ```tree
 
