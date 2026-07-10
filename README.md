@@ -68,7 +68,7 @@ Purpose: Iterates over multi-decade pixel grids to run pixel-wise non-parametric
 
 **Dataset Title:** Data for: Heterogeneous Perceptions of Rainfall Patterns Among Agropastoral Land Users in Sub-Saharan Africa
 
-DOI: [Insert Zenodo DOI here upon completion of deposit]
+[DOI: 10.5281/zenodo.20387060](https://doi.org/10.5281/zenodo.20387060)
 
 Note: Please ensure the unpacked asset structures map precisely onto the directory layouts documented above to avoid working-directory pathway breaks.
 
